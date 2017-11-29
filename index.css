@@ -79,13 +79,6 @@ main
     display: block;
 }
 
-.first_page:checked ~ .left_gallery_label[for='third_page'],
-.third_page:checked ~ .right_gallery_label[for='first_page']
-{
-    pointer-events: none;
-    color: #ddaa9b;
-}
-
 .vegetable_gallery
 {
     position: relative;
@@ -162,6 +155,7 @@ main
     left: 50%;
     z-index: 2;
     position: fixed;
+    width: 440px;
     transform: translate(-50%, -50%);
     display: none;
 }
@@ -173,23 +167,24 @@ main
 
 .modal_hidden
 {
-    width: 92%;
+    width: 340px;
     left: 50%;
     transform: translateX(-50%);
-
 }
 
 .modal_hidden,
 .modal_close_button
 {
     position: relative;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .modal_close_button
 {
     float: right;
     top: -20px;
-    right: -40px;
+    right: -10px;
     font: bold 30px serif;
     text-decoration: none;
     color: #af1d11;
